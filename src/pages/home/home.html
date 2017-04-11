@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <form #theForm="ngForm" novalidate>
+        <ion-item>
+            <ion-range [(ngModel)]="formData.radius" ngControl="radius" name="radius" #radius="ngModel" min="40" max="300" color="primary" pin="true" snaps="true" step="20">
+            </ion-range>
+        </ion-item>
+    </form>
+    <ion-row responsive-sm>
+        <ion-col>
+            <button ion-button (click)="onSubmit(theForm)" type="submit" primary block>Add place</button>
+        </ion-col>
+    </ion-row>
+    <div class="map-container">
+        <div id="mapfence">
+        </div>
+    </div>
+</ion-content>

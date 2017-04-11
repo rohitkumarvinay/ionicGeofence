@@ -1,0 +1,15 @@
+page-home {
+    .map-container {
+        width: 100%;
+        top: 150px;
+        bottom: 0px;
+        height: 50vh;
+    }
+    #mapfence {
+        width: 100%;
+        height: 100%;
+    }
+    .scroll-content {
+        overflow: hidden;
+    }
+}
